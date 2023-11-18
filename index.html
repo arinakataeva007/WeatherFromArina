@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=4fe0bf59-ec5e-4bae-b26b-e719e66bf5da" type="text/javascript"></script> -->
+    <!-- <script src="map.js" type="text/javascript"></script> -->
+    <title>Weather from Arina</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Погноз погоды</h1>
+    </header>
+    <main class="main-section">
+        <article class="clue" id="clue1">
+            <p class="clue-text">вы можете посмотреть погоду, введя координаты местоположения</p>
+        </article>
+        <section class="info-about-weather">
+            <form class="form1">
+                <input class="input" id="inputWidth" type="text" placeholder="Введите широту">
+                <input class="input" id="inputLong" type="text" placeholder="Введите долготу">
+                <button class="btn" id="btn1">Показать погоду</button>
+            </form>
+        </section>
+        <section class="weather-data">
+            <div id="map" class="map"></div>
+        </section>
+        <section class="clue" id="clue2">
+            <p>вы можете посмотреть погоду, введя название города</p>
+        </section>
+        <section class="info-about-weather">
+            <form class="form2">
+                <input class="input" id="inputCity" type="text" placeholder="Введите название города">
+                <button class="btn" id="btn2">Показать погоду</button>
+            </form>
+        </section>
+        <section class="weather-data" id="weather-data">
+        </section>
+    </main>
+    <script src="./scripts/weatherCoordinate.js"></script>
+    <script src="./scripts/weatherCity.js"></script>
+</body>
+</html>
