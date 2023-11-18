@@ -44,7 +44,7 @@ function removePreviousWeather(sselector){
   }
 
   async function getWeatherForCity(city){
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apikey}&q=${city}`;
     const responce = await fetch(url);
     const data = await responce.json();
     console.log(data);
